@@ -1,0 +1,142 @@
+/* VIGIL DASHBOARD AESTHETIC */
+:root {
+  --bg: #050505;
+  --zinc-800: #111111;
+  --accent: #3b82f6;
+}
+
+body {
+  width: 320px;
+  height: 480px;
+  margin: 0;
+  background: var(--bg);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+}
+
+.logo {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  font-style: normal;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.bri-card {
+  background: var(--zinc-800);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.bri-label {
+  font-size: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.bri-value {
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.bri-bar {
+  height: 4px;
+  background: #000;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+#bri-fill {
+  height: 100%;
+  width: 100%;
+  background: var(--accent);
+  transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toggles {
+  display: grid;
+  gap: 8px;
+}
+
+.toggle-item {
+  padding: 12px 16px;
+  background: #080808;
+  border: 1px solid #111;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #666;
+}
+
+.toggle {
+  width: 28px;
+  height: 14px;
+  background: #111;
+  border-radius: 10px;
+  position: relative;
+}
+
+.toggle.active::after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 10px;
+  height: 10px;
+  background: #10b981;
+  border-radius: 50%;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  font-size: 8px;
+  font-weight: 900;
+  color: #333;
+  letter-spacing: 0.2em;
+}

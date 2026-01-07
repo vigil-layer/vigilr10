@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>VIGIL | Field Unit Dashboard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="vigil-popup">
+    <header>
+      <div class="brand">
+        <div class="logo">V</div>
+        <span>VIGIL_DASHBOARD</span>
+      </div>
+      <div class="status-dot"></div>
+    </header>
+    
+    <main>
+      <div class="bri-card">
+        <div class="bri-label">Biological Resilience</div>
+        <div class="bri-value" id="bri-val">100%</div>
+        <div class="bri-bar"><div id="bri-fill"></div></div>
+      </div>
+      
+      <div class="toggles">
+        <div class="toggle-item">
+          <span>RETINAL_SHIELD</span>
+          <div class="toggle active"></div>
+        </div>
+        <div class="toggle-item">
+          <span>CLIPBOARD_GUARD</span>
+          <div class="toggle active"></div>
+        </div>
+      </div>
+      
+      <div class="log-feed" id="log-feed">
+        <div class="log-item">Awaiting intercepts...</div>
+      </div>
+    </main>
+    
+    <footer>
+      <span>v0.0.3.5 // NPP_SYNC_OK</span>
+    </footer>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
